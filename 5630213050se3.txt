@@ -11,10 +11,6 @@ import java.util.Scanner;
  * @author notebook
  */
 public class HomeworkFactor {
-
-    /**
-     * @param args the command line arguments
-     */
     
     public static void main(String[] args) {
         System.out.print("Enter a number : ");
