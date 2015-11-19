@@ -1,0 +1,45 @@
+package homeworkfactor;
+
+import java.util.Scanner;
+
+
+
+
+
+/**
+ *
+ * @author notebook
+ */
+public class HomeworkFactor {
+
+    /**
+     * @param args the command line arguments
+     */
+    
+    public static void main(String[] args) {
+        System.out.print("Enter a number : ");
+    Scanner input = new Scanner(System.in);
+ 
+    while (input.hasNextLong()) {
+      long n = input.nextLong();  
+      System.out.print("The prime factors of " + n + " are ");
+      printPrimeFactorsOf(n);
+      System.out.println("\n");
+
+      System.out.print("Enter another number to factor: ");
+    }
+  }
+
+  public static void printPrimeFactorsOf(long n) {
+    long d; 
+
+    if (n > 1) { 
+      for (d = 2; n % d > 0; d++);
+
+      System.out.print(d + " ");
+
+      printPrimeFactorsOf(n / d); 
+    }
+  }
+    }
+
