@@ -3,13 +3,6 @@ package homeworkfactor;
 import java.util.Scanner;
 
 
-
-
-
-/**
- *
- * @author notebook
- */
 public class HomeworkFactor {
     
     public static void main(String[] args) {
